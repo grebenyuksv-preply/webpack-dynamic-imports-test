@@ -1,3 +1,3 @@
 console.log('Parent loaded');
 
-import 'child';
+import(`child/dist/en`);
