@@ -1,3 +1,4 @@
 console.log('Parent loaded');
-
-import(`child/dist/en`);
+const locales = ['en', 'fr'];
+const LOCALE = locales[Math.floor(Math.random() * locales.length)];
+import(`child/dist/${LOCALE}`);
